@@ -41,7 +41,13 @@
             </div>
             </div>
             <div class="card-body">
-                
+                <div class="p-3">
+                    <h1 class="display-4">Selamat datang, {{ Auth::user()->name }}!</h1>
+                    {{-- <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p> --}}
+                    <hr class="my-4">
+                    <p>Halaman ini adalah halaman admin di mana anda dapat membuat berita/blog baru.</p>
+                    <a class="btn btn-danger mt-4" href="{{ route('berita.create') }}" role="button">Berita baru</a>
+                  </div>
             </div>
             <!-- /.card-body -->
             <div class="card-footer">
